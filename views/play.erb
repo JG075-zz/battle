@@ -87,4 +87,9 @@
       <p class="attack-text"> <%= @current_player.name %> attacked <%= @current_target.name %>!</p>
   <%end %>
 
+    <% if $game.winner != nil  %>
+      <%= $game.winner.name %> won!
+    <%end %>
+
+
 </div>
