@@ -84,7 +84,7 @@
     <img src="http://66.media.tumblr.com/tumblr_m2ewv8Psq21rptf33o1_500.gif">
   </div>
   <% if @status == "attack" %>
-      <p class="attack-text"> <%= @player_1.name %> attacked <%= @player_2.name %>!</p>
+      <p class="attack-text"> <%= @current_player.name %> attacked <%= @current_target.name %>!</p>
   <%end %>
 
 </div>

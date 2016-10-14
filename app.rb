@@ -20,7 +20,8 @@ enable :sessions
   get '/play' do
     @player_1 = $game.player_1
     @player_2 = $game.player_2
-    @status = nil
+    @current_player = $game.current_player
+    @current_target = $game.current_target
     @status = session[:status]
     erb (:play)
   end
