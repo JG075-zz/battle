@@ -19,11 +19,11 @@ class Game
   end
 
   def attack
-    check_winner
     if @winner == nil
       switch
       @current_target.hitpoints -= @attack_value
     end
+    check_winner
   end
 
   def check_winner
