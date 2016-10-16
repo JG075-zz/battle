@@ -26,9 +26,9 @@
     width: 40%;
   }
 
-  .left img, .right img {
-    width: 80%;
-    padding-top: 60px;
+  .left img {
+    width: 85%;
+    padding-top: 85px;
   }
 
   .right img {
@@ -62,6 +62,16 @@
     text-align: center;
     position: relative;
     top: -330;
+    right: 180;
+  }
+
+  .winner-text {
+    font-size: 32px;
+    text-shadow: 2px 2px #000;
+    text-align: center;
+    position: relative;
+    top: -300;
+    margin: 0;
   }
 
 </style>
@@ -87,9 +97,8 @@
       <p class="attack-text"> <%= @current_player.name %> attacked <%= @current_target.name %>!</p>
   <%end %>
 
-    <% if $game.winner != nil  %>
-      <%= $game.winner.name %> won!
-    <%end %>
-
+  <% if @game.winner != nil  %>
+    <p class="winner-text"><%= @game.winner.name %> won!</p>
+  <%end %>
 
 </div>

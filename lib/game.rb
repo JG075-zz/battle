@@ -1,7 +1,15 @@
 class Game
   DEFAULT_ATTACK = 10
 
-  attr_reader :player_1, :player_2, :current_target, :current_player, :winner
+  attr_reader :player_1, :player_2, :current_target, :current_player, :winner, :game
+
+  def self.create(player_1, player_2)
+    @game = Game.new(player_1, player_2)
+  end
+
+  def self.instance
+    @game
+  end
 
   def initialize(player_1, player_2)
     @attack_value = DEFAULT_ATTACK
