@@ -3,7 +3,7 @@
   body {
     font-size: 40px;
     text-transform: uppercase;
-    background: url('https://twistedsifter.files.wordpress.com/2013/05/animated-gifs-of-fighting-game-backgrounds-25.gif?w=800&h=336');
+    background: url('images/bg_play.gif');
     background-size: cover;
     color: #fff;
     font-family: 'Press Start 2P', cursive;
@@ -80,7 +80,8 @@
   <div class="left">
     <%= @player_1.name %>
     <p class="hitpoints"> HITPOINTS = <%= @player_1.hitpoints %>  </p>
-    <img src="http://67.media.tumblr.com/tumblr_mdf4r6t5yk1rptf33o1_500.gif">
+    <!-- <img src="http://67.media.tumblr.com/tumblr_mdf4r6t5yk1rptf33o1_500.gif"> -->
+    <img src="images/char1.gif">
   </div>
   <div class="middle">
     vs
@@ -91,7 +92,7 @@
   <div class="right">
     <%= @player_2.name %>
     <p class="hitpoints"> HITPOINTS = <%= @player_2.hitpoints %> </p>
-    <img src="http://66.media.tumblr.com/tumblr_m2ewv8Psq21rptf33o1_500.gif">
+    <img src="images/char2.gif">
   </div>
   <% if @status == "attack" %>
       <p class="attack-text"> <%= @current_player.name %> attacked <%= @current_target.name %>!</p>
